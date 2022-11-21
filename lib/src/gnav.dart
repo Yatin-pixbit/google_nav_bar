@@ -39,8 +39,8 @@ class GNav extends StatefulWidget {
   }) : super(key: key);
 
   final List<GButton> tabs;
-  final int selectedIndex;
-  final ValueChanged<int>? onTabChange;
+  final int? selectedIndex;
+  final ValueChanged<int?>? onTabChange;
   final double gap;
   final double tabBorderRadius;
   final double? iconSize;
@@ -70,7 +70,7 @@ class GNav extends StatefulWidget {
 }
 
 class _GNavState extends State<GNav> {
-  late int selectedIndex;
+   int? selectedIndex;
   bool clickable = true;
 
   @override
